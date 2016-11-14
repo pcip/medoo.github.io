@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/14/BaseAdapter需要重写的方法/index.html">
 <meta property="og:site_name" content="GitHub资讯侠的博客">
 <meta property="og:description" content="通常我们更多的继承BaseAdapter来编写自己的Adapter类，因为BaseAdapter类是其他Adapter类的基类。在实际运用过程中，扩展BaseAdapter类一般需要重写一下方法：">
-<meta property="og:updated_time" content="2016-11-14T03:00:12.620Z">
+<meta property="og:updated_time" content="2016-11-14T03:21:41.136Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BaseAdapter需要重写的方法">
 <meta name="twitter:description" content="通常我们更多的继承BaseAdapter来编写自己的Adapter类，因为BaseAdapter类是其他Adapter类的基类。在实际运用过程中，扩展BaseAdapter类一般需要重写一下方法：">
@@ -132,7 +132,12 @@
       
 <!-- Table of Contents -->
 
-        <p>通常我们更多的继承BaseAdapter来编写自己的Adapter类，因为BaseAdapter类是其他Adapter类的基类。在实际运用过程中，扩展BaseAdapter类一般需要重写一下方法：</p>
+        <p>通常我们更多的继承BaseAdapter来编写自己的Adapter类，因为BaseAdapter类是其他Adapter类的基类。在实际运用过程中，扩展BaseAdapter类一般需要重写一下方法： </p>
+<a id="more"></a>
+<p>1.获取当前Adapter的Items数目（返回值：int）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getCount()</div></pre></td></tr></table></figure></p>
+<p>2.获取相应position的Item（返回值：Object）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getItem(int position)</div></pre></td></tr></table></figure></p>
+<p>3.获取相应position的Item在List中的row  id（返回值：long）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getItemId(int position)</div></pre></td></tr></table></figure></p>
+<p>4.获取在指定position所要显示的data的View（返回值：View）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getView(int position,View convertView,ViewGroup parent)</div></pre></td></tr></table></figure></p>
 
       
     </div>
