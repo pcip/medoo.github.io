@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>GitHub资讯侠的博客</title>
+  <title>Archives: 2016/12 | GitHub资讯侠的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="欢迎关注">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GitHub资讯侠的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2016/12/index.html">
 <meta property="og:site_name" content="GitHub资讯侠的博客">
 <meta property="og:description" content="欢迎关注">
 <meta name="twitter:card" content="summary">
@@ -113,99 +113,41 @@
       <div class="body-wrap">
         
   
-    <article id="post-SQLite数据库笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
+  
     
     
-    <div class="article-entry" itemprop="articleBody">
       
-<!-- Table of Contents -->
-
-        <hr>
-<p>title: SQLite数据库笔记<br>date: 2016-12-04 20:09:36<br>tags:SQLite<br>—1.sqlite数据库数据类型<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Integer     varchar(10)     float       double      char(10)   text</div></pre></td></tr></table></figure></p>
-<p>2.SQLite总结</p>
-<p>2.1 创建表的语句<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">create table 表名(字段名称 数据类型 语约束,字段名称 数据类型 语约束)</div><div class="line"></div><div class="line">create table persion(_id Integer primary key,name varchar(10),age Integer not null)</div></pre></td></tr></table></figure></p>
-<p>2.2 删除<strong>表的语句</strong><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">drop table 表名</div><div class="line"></div><div class="line">drop table person</div></pre></td></tr></table></figure></p>
-<p>2.3 插入数据<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">insert into 表名(字段，字段) values(值1，值2...)</div><div class="line"></div><div class="line">(1)insert into person(_id,age) values(1.20)</div><div class="line"></div><div class="line">(2)insert into person values(2,"zs",30)</div></pre></td></tr></table></figure></p>
-<p>2.4 修改数据<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">update 表名 set 字段=新值 where 修改的条件</div><div class="line"></div><div class="line">updata person set name = "ls",age = 20 where _id = 1</div><div class="line">把id=1字段的name值修改为ls,年龄为20</div></pre></td></tr></table></figure></p>
-<p>2.5 删除<strong>数据</strong><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">delete from 表名 where 删除的条件</div><div class="line"></div><div class="line">delete from person where _id = 2</div><div class="line">删除_id = 2 的字段</div></pre></td></tr></table></figure></p>
-<p>2.6 查询语句<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">select 字段名 from 表名 where 查询条件 group by 分组的字段 having 筛选条件 order by 排序字段</div><div class="line">select * from person;</div><div class="line"></div><div class="line">select _id,name from person                         查询person表中的id和name的语句</div><div class="line">select * from person where <span class="emphasis">_id = 1                  查询person表中_</span>id=1的语句</div><div class="line">select * from person where name id null             查询name为null的 的语句</div><div class="line">select * from person where name like "&amp;A&amp;"          查询中间有A，前后任意字符的语句</div><div class="line">select * from person where name like "&amp;_A&amp;"         查询一个字符之后是A，后面任意字符的语句</div><div class="line">select * from person where age between 10 and 20    查询年龄在10~20之间的的语句</div><div class="line">select * from person where age &gt; 18 order by <span class="emphasis">_id    查询年龄&gt;18的的语句，兵按照_</span>id排序</div></pre></td></tr></table></figure></p>
-
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/12/04/SQLite数据库笔记/" class="archive-article-date">
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/12/04/SQLite数据库笔记/" class="archive-article-date">
   	<time datetime="2016-12-04T12:09:36.535Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-04</time>
 </a>
-      
-      
+        </div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
-
-
   
-    <article id="post-BaseAdapter需要重写的方法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/14/BaseAdapter需要重写的方法/">BaseAdapter需要重写的方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>通常我们更多的继承BaseAdapter来编写自己的Adapter类，因为BaseAdapter类是其他Adapter类的基类。在实际运用过程中，扩展BaseAdapter类一般需要重写一下方法： </p>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/14/BaseAdapter需要重写的方法/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/14/BaseAdapter需要重写的方法/" class="archive-article-date">
-  	<time datetime="2016-11-14T02:55:04.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-14</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 
       </div>
@@ -227,9 +169,9 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
